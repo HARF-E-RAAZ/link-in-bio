@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harf-e-Raaz حرفِ راز — Poetry &amp; the Secret</title>
+<meta name="description" content="Urdu shayari, Farsi ghazals, and Sufi wisdom. Daily verses from Ghalib, Rumi, Mir, Iqbal, and the masters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1F; --ink-soft:#232329; --gold:#C9A227; --gold-dim:#8a7020;
+    --ivory:#F5F0E6; --ivory-dim:#b8b2a4; --maroon:#5C1A1B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--ink); color:var(--ivory);
+    font-family:'Cormorant Garamond',Georgia,serif;
+    min-height:100vh; display:flex; justify-content:center;
+    background-image:radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201,162,39,.07), transparent);
+  }
+  .page{width:100%;max-width:430px;padding:56px 24px 48px;text-align:center}
+
+  /* daira — the circle mark */
+  .daira{
+    width:148px;height:148px;margin:0 auto 8px;border-radius:50%;
+    border:1px solid var(--gold-dim);
+    display:flex;align-items:center;justify-content:center;
+    position:relative; animation:breathe 7s ease-in-out infinite;
+  }
+  .daira::after{ /* second, offset ring — the raaz inside the harf */
+    content:"";position:absolute;inset:7px;border-radius:50%;
+    border:1px solid rgba(201,162,39,.25);
+  }
+  .daira .urdu{
+    font-family:'Noto Nastaliq Urdu',serif;font-size:2.05rem;color:var(--gold);
+    line-height:1; padding-top:.4em; direction:rtl;
+  }
+  @keyframes breathe{0%,100%{box-shadow:0 0 0 0 rgba(201,162,39,0)}50%{box-shadow:0 0 34px 0 rgba(201,162,39,.13)}}
+
+  h1{font-size:1.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory);margin-top:14px}
+  .tagline{font-style:italic;font-size:1.06rem;color:var(--ivory-dim);margin-top:6px}
+  .tagline .u{font-family:'Noto Nastaliq Urdu',serif;font-style:normal;font-size:.95rem;color:var(--gold);direction:rtl}
+
+  .verse{
+    margin:30px auto 6px;max-width:330px;color:var(--ivory-dim);
+    font-size:1rem;line-height:1.55;
+  }
+  .verse .u{font-family:'Noto Nastaliq Urdu',serif;display:block;color:var(--ivory);font-size:1.12rem;line-height:2.2;direction:rtl}
+  .verse .attr{display:block;margin-top:6px;color:var(--gold);font-size:.85rem;letter-spacing:.18em;text-transform:uppercase}
+
+  .links{margin-top:34px;display:flex;flex-direction:column;gap:12px}
+  a.link{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:15px 20px;text-decoration:none;color:var(--ivory);
+    background:var(--ink-soft);border:1px solid rgba(201,162,39,.22);
+    font-size:1.05rem;letter-spacing:.03em;border-radius:2px;
+    transition:border-color .25s,transform .25s;
+  }
+  a.link:hover,a.link:focus-visible{border-color:var(--gold);transform:translateY(-1px)}
+  a.link:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  a.link .label small{display:block;font-size:.78rem;color:var(--ivory-dim);letter-spacing:.06em;margin-top:1px}
+  a.link .glyph{font-family:'Noto Nastaliq Urdu',serif;color:var(--gold-dim);font-size:.95rem;direction:rtl}
+  a.link.primary{border-color:var(--gold);background:linear-gradient(180deg,rgba(201,162,39,.10),rgba(201,162,39,.03))}
+  a.link.maroon{border-left:3px solid var(--maroon)}
+  .label{text-align:left}
+
+  footer{margin-top:42px;color:var(--ivory-dim);font-size:.82rem;letter-spacing:.12em}
+  footer .ring{display:inline-block;width:7px;height:7px;border:1px solid var(--gold-dim);border-radius:50%;vertical-align:middle;margin:0 8px}
+
+  @media (prefers-reduced-motion: reduce){.daira{animation:none}a.link{transition:none}}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="daira" aria-hidden="true"><span class="urdu">حرفِ راز</span></div>
+  <h1>Harf-e-Raaz</h1>
+  <p class="tagline">Sukhan bhi. Raaz bhi. &nbsp;<span class="u">سخن بھی۔ راز بھی۔</span></p>
+
+  <blockquote class="verse">
+    <span class="u">ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے</span>
+    A thousand desires, each worth dying for…
+    <span class="attr">Ghalib · verse of the week</span>
+  </blockquote>
+
+  <nav class="links" aria-label="Harf-e-Raaz links">
+    <a class="link primary" href="https://youtube.com/@harferaaz">
+      <span class="label">Watch full ghazals on YouTube<small>New ghazal every Sunday · daily sher</small></span>
+      <span class="glyph">غزل</span>
+    </a>
+    <a class="link" href="https://instagram.com/harf.e.raaz">
+      <span class="label">Instagram<small>Daily verse reels</small></span>
+      <span class="glyph">شعر</span>
+    </a>
+    <a class="link" href="https://tiktok.com/@harferaaz">
+      <span class="label">TikTok<small>Shorts &amp; Sufi wisdom</small></span>
+      <span class="glyph">راز</span>
+    </a>
+    <a class="link maroon" href="https://whatsapp.com/channel/REPLACE">
+      <span class="label">WhatsApp Channel<small>One verse, every morning</small></span>
+      <span class="glyph">ورد</span>
+    </a>
+    <a class="link maroon" href="https://gumroad.com/REPLACE">
+      <span class="label">40 Verses for the Seeker — PDF<small>Curated verses · translation · reflection</small></span>
+      <span class="glyph">کتاب</span>
+    </a>
+    <a class="link" href="https://open.spotify.com/show/REPLACE">
+      <span class="label">Listen on Spotify<small>Ghazals as audio, for the road</small></span>
+      <span class="glyph">سماع</span>
+    </a>
+  </nav>
+
+  <footer><span class="ring"></span>Harf-e-Raaz · est. 2026<span class="ring"></span></footer>
+
+</main>
+</body>
+</html>
